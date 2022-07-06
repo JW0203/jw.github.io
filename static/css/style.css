@@ -53,6 +53,9 @@ a:active {
     width: 13%;
 }
 
+#concept-menu select{width: 150px}
+#concept-menu option {overflow: hidden;  white-sapce: np-wrap;  text-overflow: ellipsis;}
+
 #concept-list{
     top: 5%;
     width: 14%;
@@ -64,12 +67,6 @@ a:active {
     left: 14.5%;
     height: 99%;
     width: 66%
-}
-#concept-words{
-    top:0;
-    left:80%;
-    height: 99%;
-    width:20%;
 }
 
 #concept-tweet{
@@ -85,9 +82,4 @@ a:active {
 #concept-list table{font-size: 10px;}
 #concept-list table th#term{width: 300px }
 #concept-list h2 {font-size: 14px; margin: 4px; text-align: left}
-
-#concept-words{ overflow: scroll; overflow-x: hidden; }
-#concept-words table{font-size: 14px;}
-#concept-words h2 {font-size: 14px; margin: 4px; text-align: left}
-
 
