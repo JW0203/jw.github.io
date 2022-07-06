@@ -1,0 +1,42 @@
+.centering {
+    text-align: center;
+  }  
+.bold{
+      font-weight: bold;
+  }
+.gap{
+    margin-right: 25px;
+}
+
+.logo{
+    margin-top: 80px;
+    width: 165px;
+    height: 58px;
+}
+
+.menu{
+    font-family: "Helvetica";
+    color: RGB(88,89,91);
+    font-size: 16px;    
+    margin-top: 100px;
+    margin-bottom: 60px;
+    text-decoration: none;
+}
+/* When setting the style for several link states, there are some order rules:
+
+a:hover MUST come after a:link and a:visited
+a:active MUST come after a:hover */
+
+/* unvisited link */
+a:link {
+    color: blue;
+	text-decoration: none;
+  }
+a:visited {
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+color: red;
+}

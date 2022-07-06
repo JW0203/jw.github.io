@@ -1,0 +1,72 @@
+body {
+    font-family:
+    background: #fefefe;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+a{
+    color: royalblue;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom:solid;
+    border-color: #F39800;
+    border-width:3px;
+    color: #F39800;
+}
+
+a:active {
+    color: #F30000;
+    text-decoration: none;
+}
+
+#conceptviz {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 100%;
+}
+
+#concept-menu, #concept-list, #leaf-map, #concept-graph, #concept-image {
+    position: absolute;
+}
+
+#concept-menu{
+    top: 0;
+    height: 30px;
+    width: 300px;
+}
+
+#concept-list{
+    top: 30px;
+    height: 900px;
+    width: 300px;
+}
+
+#leaf-map{
+    top: 0;
+    left: 300px;
+    height: 600px;
+    width: 700px
+}
+
+#concept-graph{
+    top: 0px;
+    left: 1100px;
+    height: 600px;
+    width: 750px;
+}
+
+#concept-image {
+    top: 600px;
+    left: 300px;
+    height: 300px;
+    width: 1800px;
+}
+
+#concept-list{ overflow: scroll; overflow-x: hidden; }
+#concept-list table{font-size: 10px;}
+#concept-list table th#term{width: 300px }
+#concept-list h2 {font-size: 14px; margin: 4px; text-align: left}
