@@ -1,4 +1,4 @@
-﻿var map =new L.map('leaf-map').setView([41.3228, -93.7181], 4.5);   //USA
+﻿var map =new L.map('leaf-map').setView([41.3228, -93.7181], 4);   //USA
 
 //open street map 
  var tile = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
@@ -11,7 +11,7 @@ L.svg().addTo(map);
 
 
 function refresh() {
-    map.setView([41.3228, -93.7181], 4.5); 
+    map.setView([41.3228, -93.7181], 4); 
 }
 
 function drowmap() {
