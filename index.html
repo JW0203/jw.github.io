@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+    <!-- import the visualization's css styling -->
+    <link rel="stylesheet" href="static/css/style.css" media="screen" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+            integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+            crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.3.0/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.3.0/dist/MarkerCluster.Default.css" />
+	
+  </head>
+  <body>
+    <h1> Results of Estimated  Topics</h1>
+    <div id="conceptviz">
+	<div id="concept-menu">	  
+	  <div id="type-select">
+	    <select>		
+			<option value="select_tab">Please select</option>
+			<option value="topic 0"> jonas, nick, church, ministry, iglesias</option>
+            <option value="topic 1"> incident, cleared, construction, west, ave</option>
+            <option value="topic 2"> calm, storm, warning, cover, severe</option>
+            <option value="topic 3"> cosplay, comic, star, wars, book</option>
+            <option value="topic 4"> kingdom, magic, halloween, scary, christmas</option>
+            <option value="topic 5"> president, obama, steelers, steeltown, tequila</option>
+            <option value="topic 6"> center, medical, fair, county, country</option>
+            <option value="topic 7"> airport, international, flight, plane, airlines</option>
+            <option value="topic 8"> hyatt, regency</option>
+            <option value="topic 9"> customer, sale, store, clerical, business</option>
+            <option value="topic 10"> career, arc</option>
+            <option value="topic 11"> fitness, goals, squad, fit, workout</option>
+            <option value="topic 12"> candy, cotton, feast, gennaro, cannoli</option>
+            <option value="topic 13"> hot, tub, brice, williams</option>
+            <option value="topic 14"> food, beer, lunch, drinking, wine</option>
+            <option value="topic 15"> apple, picking, iphone, phone, market</option>
+            <option value="topic 16"> golf, club, waves, surfing, tournament</option>
+            <option value="topic 17"> award, awards, movie, film, screening</option>
+            <option value="topic 18"> rip, peace, remember, sept, september</option>
+            <option value="topic 19"> bike, ride, bikes, race, racing</option>
+            <option value="topic 20"> music, awesome, amazing, festival, fest</option>
+            <option value="topic 21"> red, white, roll, blue, black</option>
+            <option value="topic 22"> trip, usa, fall, nature, sky</option>
+            <option value="topic 23"> insta, pic, instagram, picture, gay</option>
+            <option value="topic 24"> art, street, fashion, photography, style</option>
+            <option value="topic 25"> garden, gardens, flowers, flower</option>
+            <option value="topic 26"> sunday, funday, saturday, brunch, nfl</option>
+            <option value="topic 27"> trnd, trend, trends, started, trending</option>
+            <option value="topic 28"> college, university, student, campus, alpha</option>
+            <option value="topic 29"> bear, bears, mary, bloody, spartan</option>
+            <option value="topic 30"> football, win, stadium, nfl, beat</option>
+	    </select>                    
+	  </div>
+ 
+  
+	</div>
+	
+	<div id="concept-list">
+	  <h2> List of pois</h2>
+	  <ul>
+	  </ul>
+	</div>
+	
+	<div id="leaf-map"></div>
+
+	<div id="concept-tweet"></div>
+    </div>
+    
+    <!-- From  web -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//d3js.org/topojson.v0.min.js" charset="utf-8"></script>
+    <script src="https://d3js.org/d3-queue.v3.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+            integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+            crossorigin=""></script>
+    <script   src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+            integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+            crossorigin="anonymous"></script>
+    <script sync src="https://platform.twitter.com/widgets.js"></script>
+	<!-- For leaflet markercluster -->
+    <script src="https://unpkg.com/leaflet.markercluster@1.3.0/dist/leaflet.markercluster.js"></script>
+    <script src='https://unpkg.com/leaflet.markercluster@1.3.0/dist/leaflet.markercluster-src.js'></script>
+    <!-- From  folders -->    
+    <script src="static/lib/crossfilter.min.js"></script>
+    <script src="static/js/concept_core.js"></script>	    
+    <script src="static/js/concept_menu.js"></script>
+    <script src="static/js/concept_list.js"></script>
+    <script src="static/js/concept_main.js"></script>
+    <script src="static/js/leaf-map.js"></script>
+	<script src="static/js/concept_tweet.js"></script>
+
+  </body>
+</html>
